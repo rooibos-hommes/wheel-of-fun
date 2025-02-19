@@ -6,6 +6,30 @@ Overview
 
 The Wheel of Fun is a React-based interactive web application that allows users to enter their hobbies, spin a wheel, and randomly select an activity to do. The app automatically assigns an emoji to each hobby using an external emoji API. Additionally, users can save and load their hobby lists, manually override assigned emojis, and interact with an emoji picker if an appropriate emoji isn't found.
 
+
+INSTALL AND RUN 
+make sure ypu have node and npm installed 
+1️⃣ Install Node.js and npm
+Ensure you have Node.js installed (which includes npm):
+
+Check if installed:
+node -v
+npm -v
+If not installed, download it from Node.js official website.
+2️⃣ Set Up Your React Project
+Since the code is in React, you'll need a React environment.
+
+Open VS Code and navigate to your project folder.
+cd path/to/your/project
+(id clones, MAKE SURE YOU change directory with terminal command: cd wheel-of-fun found inside of )
+
+
+Initialize a React App (if needed):
+npx create-react-app wheel-of-fun
+cd wheel-of-fun
+
+
+
 Emoji Selection Process
 
 Originally, I thought AI/ML would be needed to match hobbies with their best-suited emoji. However, a simple API request does the job efficiently. The app queries an emoji API with the user's hobby input and retrieves the most relevant emoji.
