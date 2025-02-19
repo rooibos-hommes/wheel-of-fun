@@ -6,7 +6,7 @@ import EmojiPicker from "emoji-picker-react";
 
 const getEmoji = async (hobby, setShowEmojiPicker, setSelectedEmoji, setCurrentHobby) => {
   try {
-    const response = await axios.get(`https://emoji-api.com/emojis?search=${hobby}&access_key=02974d2c811d50aa2e8ad1f2c580025b21a084e5`);
+    const response = await axios.get(`https://emoji-api.com/emojis?search=${hobby}&access_key=insert_api_key`);
     if (response.data.length > 0) {
       return response.data[0].character;
     } else {
